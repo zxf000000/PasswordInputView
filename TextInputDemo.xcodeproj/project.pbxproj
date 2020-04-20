@@ -15,6 +15,8 @@
 		4E734E7F242CB66A00786C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E734E7D242CB66A00786C27 /* LaunchScreen.storyboard */; };
 		4E734E8A242CB66B00786C27 /* TextInputDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E734E89242CB66B00786C27 /* TextInputDemoTests.swift */; };
 		4E734E95242CB66B00786C27 /* TextInputDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E734E94242CB66B00786C27 /* TextInputDemoUITests.swift */; };
+		4E76EEDB244D759000CF1FB2 /* PasswordInputViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76EED9244D759000CF1FB2 /* PasswordInputViewStyle.swift */; };
+		4E76EEDC244D759000CF1FB2 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E76EEDA244D759000CF1FB2 /* PasswordInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4E734E90242CB66B00786C27 /* TextInputDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextInputDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E734E94242CB66B00786C27 /* TextInputDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputDemoUITests.swift; sourceTree = "<group>"; };
 		4E734E96242CB66B00786C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E76EED9244D759000CF1FB2 /* PasswordInputViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordInputViewStyle.swift; sourceTree = "<group>"; };
+		4E76EEDA244D759000CF1FB2 /* PasswordInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		4E734E71242CB66800786C27 /* TextInputDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4E76EED8244D757400CF1FB2 /* Sources */,
 				4E734E72242CB66800786C27 /* AppDelegate.swift */,
 				4E734E74242CB66800786C27 /* SceneDelegate.swift */,
 				4E734E76242CB66800786C27 /* ViewController.swift */,
@@ -126,6 +131,15 @@
 				4E734E96242CB66B00786C27 /* Info.plist */,
 			);
 			path = TextInputDemoUITests;
+			sourceTree = "<group>";
+		};
+		4E76EED8244D757400CF1FB2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4E76EEDA244D759000CF1FB2 /* PasswordInputView.swift */,
+				4E76EED9244D759000CF1FB2 /* PasswordInputViewStyle.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +210,7 @@
 				TargetAttributes = {
 					4E734E6E242CB66800786C27 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					4E734E84242CB66B00786C27 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -260,7 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E734E77242CB66800786C27 /* ViewController.swift in Sources */,
+				4E76EEDC244D759000CF1FB2 /* PasswordInputView.swift in Sources */,
 				4E734E73242CB66800786C27 /* AppDelegate.swift in Sources */,
+				4E76EEDB244D759000CF1FB2 /* PasswordInputViewStyle.swift in Sources */,
 				4E734E75242CB66800786C27 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +451,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZ9FCZ5X8D;
 				INFOPLIST_FILE = TextInputDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +461,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yjkj.hit.TextInputDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,7 +472,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZ9FCZ5X8D;
 				INFOPLIST_FILE = TextInputDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +482,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yjkj.hit.TextInputDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
